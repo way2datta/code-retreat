@@ -2,11 +2,9 @@
 
 namespace object_orientation
 {
-
     internal class ItemsInCategory
     {
-        
-        private static Dictionary<string, string> ItemsCategoryMapping = new Dictionary<string, string>();
+        private static readonly Dictionary<string, string> ItemsCategoryMapping = new Dictionary<string, string>();
 
         static ItemsInCategory()
         {

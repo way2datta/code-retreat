@@ -20,11 +20,11 @@
 
             var gstRateApplicableToUnitItem = GstRateProvider.GetRateFor(categoryName);
 
-            var gstRatePerItem = item.InitialPrice * gstRateApplicableToUnitItem / 100;
+            var itemFinalPriceWithoutGst = item.Quantity * item.InitialPrice;
 
-            var finalPrice = item.Quantity * (item.InitialPrice + gstRatePerItem);
+            var itemFinalPriceIncludingGst = itemFinalPriceWithoutGst + itemFinalPriceWithoutGst * gstRateApplicableToUnitItem / 100;
 
-            return finalPrice;
+            return itemFinalPriceIncludingGst;
         }
     }
 }

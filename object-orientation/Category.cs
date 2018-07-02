@@ -1,6 +1,6 @@
 ﻿namespace object_orientation
 {
-    class Category
+    internal class Category
     {
         internal const string Cosmetics = "Cosmetics";
         internal const string Electronics = "Electronics";
