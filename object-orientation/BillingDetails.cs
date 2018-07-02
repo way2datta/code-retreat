@@ -2,12 +2,9 @@
 {
     internal class BillingDetails
     {
-        public BillingDetails(Item scannedItem)
-        {
-            this.Item = scannedItem;
-        }
+        public BillingDetails(Item scannedItem) => Item = scannedItem;
 
-        public decimal FinalPrice { get; set; }
-        public Item Item { get; set; }
+        public decimal FinalPrice { get; private set; }
+        public Item Item { get; private set; }
     }
 }
