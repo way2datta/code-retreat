@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace object_orientation
 {
@@ -10,18 +11,7 @@ namespace object_orientation
 
         internal static int GetRateFor(string categoryName)
         {
-            var gstPercentageForItem = 0;
-
-            foreach (var categoryGstRate in CategoryGstRatesMapping)
-            {
-                if (categoryGstRate.Key == categoryName)
-                {
-                    gstPercentageForItem = categoryGstRate.Value;
-                    break;
-                }
-            }
-
-            return gstPercentageForItem;
+            return CategoryGstRatesMapping.First(x => x.Key == categoryName).Value;
         }
 
         private static void SetupGstRateForCategories()

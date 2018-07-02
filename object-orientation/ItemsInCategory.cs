@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace object_orientation
 {
@@ -13,18 +14,7 @@ namespace object_orientation
 
         internal static string GetCategoryFor(string itemName)
         {
-            var categoryName = "";
-
-            foreach (var item in ItemsCategoryMapping)
-            {
-                if (item.Key == itemName)
-                {
-                    categoryName = item.Value;
-                    break;
-                }
-            }
-
-            return categoryName;
+            return ItemsCategoryMapping.First(x => x.Key == itemName).Value;
         }
 
         private static void SetupItemsCategoryMapping()
