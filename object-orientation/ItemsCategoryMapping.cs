@@ -13,7 +13,7 @@ namespace object_orientation
 
         internal static string GetCategoryFor(string itemName)
         {
-            string categoryName = "";
+            var categoryName = "";
 
             foreach (var item in Mapping)
             {

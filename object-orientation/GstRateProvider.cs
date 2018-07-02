@@ -4,16 +4,13 @@ namespace object_orientation
 {
     internal class GstRateProvider
     {
-        private static Dictionary<string, int> CategoryGstRatesInPercentage = new Dictionary<string, int>();
+        private static readonly Dictionary<string, int> CategoryGstRatesInPercentage = new Dictionary<string, int>();
 
-        static GstRateProvider()
-        {
-            SetupGstRateForCategories();
-        }
+        static GstRateProvider() => SetupGstRateForCategories();
 
         internal static int GetRateFor(string categoryName)
         {
-            int gstPercentageForItem = 0;
+            var gstPercentageForItem = 0;
 
             foreach (var categoryGstRate in CategoryGstRatesInPercentage)
             {
