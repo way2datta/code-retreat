@@ -26,10 +26,10 @@ namespace object_orientation
 
         private static void SetupGstRateForCategories()
         {
-            CategoryGstRatesMapping.Add("Food-grains", 0);
-            CategoryGstRatesMapping.Add("Furniture", 5);
-            CategoryGstRatesMapping.Add("Electronics", 18);
-            CategoryGstRatesMapping.Add("Cosmetics", 28);
+            CategoryGstRatesMapping.Add(Category.FoodGrains, 0);
+            CategoryGstRatesMapping.Add(Category.Furniture, 5);
+            CategoryGstRatesMapping.Add(Category.Electronics, 18);
+            CategoryGstRatesMapping.Add(Category.Cosmetics, 28);
         }
     }
 }

@@ -2,8 +2,10 @@
 
 namespace object_orientation
 {
+
     internal class ItemsInCategory
     {
+        
         private static Dictionary<string, string> ItemsCategoryMapping = new Dictionary<string, string>();
 
         static ItemsInCategory()
@@ -37,26 +39,26 @@ namespace object_orientation
 
         private static void SetupItemsForCosmetics()
         {
-            ItemsCategoryMapping.Add("Shampoo", "Cosmetics");
-            ItemsCategoryMapping.Add("Perfume", "Cosmetics");
+            ItemsCategoryMapping.Add("Shampoo", Category.Cosmetics);
+            ItemsCategoryMapping.Add("Perfume", Category.Cosmetics);
         }
 
         private static void SetupItemsForElectronics()
         {
-            ItemsCategoryMapping.Add("TV", "Electronics");
-            ItemsCategoryMapping.Add("Mobile", "Electronics");
+            ItemsCategoryMapping.Add("TV", Category.Electronics);
+            ItemsCategoryMapping.Add("Mobile", Category.Electronics);
         }
 
         private static void SetupItemsForFoodGrains()
         {
-            ItemsCategoryMapping.Add("Rice", "Food-grains");
-            ItemsCategoryMapping.Add("Wheat", "Food-grains");
+            ItemsCategoryMapping.Add("Rice", Category.FoodGrains);
+            ItemsCategoryMapping.Add("Wheat", Category.FoodGrains);
         }
 
         private static void SetupItemsForFurniture()
         {
-            ItemsCategoryMapping.Add("Sofa", "Furniture");
-            ItemsCategoryMapping.Add("Chairs", "Furniture");
+            ItemsCategoryMapping.Add("Sofa", Category.Furniture);
+            ItemsCategoryMapping.Add("Chairs", Category.Furniture);
         }
     }
 }
