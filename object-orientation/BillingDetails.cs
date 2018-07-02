@@ -7,7 +7,7 @@
             Item = scannedItem;
         }
 
-        public decimal FinalPrice { get; set; }
+        public decimal ItemsFinalPrice { get; set; }
         public Item Item { get; set; }
     }
 }

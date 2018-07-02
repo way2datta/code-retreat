@@ -2,11 +2,11 @@
 
 namespace object_orientation
 {
-    internal class ItemsCategoryMapping
+    internal class ItemsInCategory
     {
-        private static Dictionary<string, string> Mapping = new Dictionary<string, string>();
+        private static Dictionary<string, string> ItemsCategoryMapping = new Dictionary<string, string>();
 
-        static ItemsCategoryMapping()
+        static ItemsInCategory()
         {
             SetupItemsCategoryMapping();
         }
@@ -15,7 +15,7 @@ namespace object_orientation
         {
             var categoryName = "";
 
-            foreach (var item in Mapping)
+            foreach (var item in ItemsCategoryMapping)
             {
                 if (item.Key == itemName)
                 {
@@ -37,26 +37,26 @@ namespace object_orientation
 
         private static void SetupItemsForCosmetics()
         {
-            Mapping.Add("Shampoo", "Cosmetics");
-            Mapping.Add("Perfume", "Cosmetics");
+            ItemsCategoryMapping.Add("Shampoo", "Cosmetics");
+            ItemsCategoryMapping.Add("Perfume", "Cosmetics");
         }
 
         private static void SetupItemsForElectronics()
         {
-            Mapping.Add("TV", "Electronics");
-            Mapping.Add("Mobile", "Electronics");
+            ItemsCategoryMapping.Add("TV", "Electronics");
+            ItemsCategoryMapping.Add("Mobile", "Electronics");
         }
 
         private static void SetupItemsForFoodGrains()
         {
-            Mapping.Add("Rice", "Food-grains");
-            Mapping.Add("Wheat", "Food-grains");
+            ItemsCategoryMapping.Add("Rice", "Food-grains");
+            ItemsCategoryMapping.Add("Wheat", "Food-grains");
         }
 
         private static void SetupItemsForFurniture()
         {
-            Mapping.Add("Sofa", "Furniture");
-            Mapping.Add("Chairs", "Furniture");
+            ItemsCategoryMapping.Add("Sofa", "Furniture");
+            ItemsCategoryMapping.Add("Chairs", "Furniture");
         }
     }
 }

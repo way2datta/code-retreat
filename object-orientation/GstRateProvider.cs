@@ -4,7 +4,7 @@ namespace object_orientation
 {
     internal class GstRateProvider
     {
-        private static readonly Dictionary<string, int> CategoryGstRatesInPercentage = new Dictionary<string, int>();
+        private static readonly Dictionary<string, int> CategoryGstRatesMapping = new Dictionary<string, int>();
 
         static GstRateProvider() => SetupGstRateForCategories();
 
@@ -12,7 +12,7 @@ namespace object_orientation
         {
             var gstPercentageForItem = 0;
 
-            foreach (var categoryGstRate in CategoryGstRatesInPercentage)
+            foreach (var categoryGstRate in CategoryGstRatesMapping)
             {
                 if (categoryGstRate.Key == categoryName)
                 {
@@ -26,10 +26,10 @@ namespace object_orientation
 
         private static void SetupGstRateForCategories()
         {
-            CategoryGstRatesInPercentage.Add("Food-grains", 0);
-            CategoryGstRatesInPercentage.Add("Furniture", 5);
-            CategoryGstRatesInPercentage.Add("Electronics", 18);
-            CategoryGstRatesInPercentage.Add("Cosmetics", 28);
+            CategoryGstRatesMapping.Add("Food-grains", 0);
+            CategoryGstRatesMapping.Add("Furniture", 5);
+            CategoryGstRatesMapping.Add("Electronics", 18);
+            CategoryGstRatesMapping.Add("Cosmetics", 28);
         }
     }
 }

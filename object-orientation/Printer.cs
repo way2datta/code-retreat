@@ -11,7 +11,7 @@ namespace object_orientation
                 "*******************************************\n" +
                 "Quantity: " + billingDetails.Item.Quantity +
                 "\nPrice per unit: " + billingDetails.Item.InitialPrice +
-                "\nFinal rate: " + billingDetails.FinalPrice;
+                "\nFinal rate: " + billingDetails.ItemsFinalPrice;
 
             Console.WriteLine(output);
 

@@ -8,7 +8,7 @@
 
             var billingDetails = new BillingDetails(scannedItem)
             {
-                FinalPrice = itemFinalPrice
+                ItemsFinalPrice = itemFinalPrice
             };
 
             return billingDetails;
@@ -16,11 +16,11 @@
 
         private static decimal CalculateFinalPrice(Item item)
         {
-            var category = ItemsCategoryMapping.GetCategoryFor(item.Name);
+            var categoryName = ItemsInCategory.GetCategoryFor(item.Name);
 
-            var gstRateForItem = GstRateProvider.GetRateFor(category);
+            var gstRateApplicableToUnitItem = GstRateProvider.GetRateFor(categoryName);
 
-            var gstRatePerItem = item.InitialPrice * gstRateForItem / 100;
+            var gstRatePerItem = item.InitialPrice * gstRateApplicableToUnitItem / 100;
 
             var finalPrice = item.Quantity * (item.InitialPrice + gstRatePerItem);
 
