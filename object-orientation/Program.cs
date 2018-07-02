@@ -6,12 +6,21 @@ namespace object_orientation
     {
         internal static BillingDetails GetBillingDetails(Item scannedItem)
         {
-            throw new NotImplementedException();
+            BillingDetails billingDetails = new BillingDetails(scannedItem);
+
+            return billingDetails;
         }
     }
 
     internal class BillingDetails
     {
+        public BillingDetails(Item scannedItem)
+        {
+            this.Item = scannedItem;
+        }
+
+        public decimal FinalPrice { get; set; }
+        public Item Item { get; set; }
     }
 
     internal class Item
@@ -59,7 +68,15 @@ namespace object_orientation
     {
         internal static void Print(BillingDetails billingDetails)
         {
-            throw new NotImplementedException();
+            string output = "*******************************************\n" +
+                "Billing Details for " + billingDetails.Item.Name + ":\n" +
+                "*******************************************\n" +
+                "Quantity: " + billingDetails.Item.Quantity +
+                "\nPrice per unit: " + billingDetails.Item.InitialPrice +
+                "\nFinal rate: " + billingDetails.FinalPrice;
+            Console.WriteLine(output);
+
+            Console.WriteLine("\n*********************************\n");
         }
     }
 }
