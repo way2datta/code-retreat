@@ -38,3 +38,12 @@ Price per unit: 200
 Final rate: 600
 
 *********************************
+
+
+Please follow below sequence while browsing the code
+1. First round.
+2. Meaningulful names.
+3. Exttact methods.
+4. Object-oreintation
+
+
