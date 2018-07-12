@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Object.Orientation
+﻿namespace Object.Orientation
 {
     internal class NMartStore
     {
@@ -8,7 +6,7 @@ namespace Object.Orientation
         {
             var scannedItem = ItemScanner.ScanItem();
             var billingDetails = Billing.GetBillingDetails(scannedItem);
-            var formattedContent = FinalBillReport.Format(billingDetails);
+            var formattedContent = FinalBillReportFormatter.Format(billingDetails);
             Printer.Print(formattedContent);
         }
     }
