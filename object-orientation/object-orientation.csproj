@@ -45,6 +45,7 @@
     <Compile Include="Billing.cs" />
     <Compile Include="BillingDetails.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="FinalBillReportFormatter.cs" />
     <Compile Include="GstRateProvider.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ItemScanner.cs" />

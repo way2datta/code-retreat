@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "first-round", "first-round", "{E63C55D4-7514-42D8-988C-FE6A1787772C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1st round", "1st round", "{E63C55D4-7514-42D8-988C-FE6A1787772C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "first-round", "first-round\first-round.csproj", "{AEDFDB60-7C8B-47FE-8B4A-A22E3597ACC9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "second-round", "second-round", "{7B894272-5F5B-4B8D-9FAB-630C2FCF0D3A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2nd round", "2nd round", "{7B894272-5F5B-4B8D-9FAB-630C2FCF0D3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meaningful-names", "meaningful-names\meaningful-names.csproj", "{56FEE8EB-F464-4EA4-A491-938C30426236}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "third-round", "third-round", "{979D95FF-B5C1-4136-9759-53CFAB3440D4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rd round", "3rd round", "{979D95FF-B5C1-4136-9759-53CFAB3440D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extract-method", "extract-method\extract-method.csproj", "{6450E019-06D9-4254-A908-11D1B59FE3EA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fourth-round", "fourth-round", "{999581F9-0EA7-4A7D-BA53-5A2FF98C5018}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4th round", "4th round", "{999581F9-0EA7-4A7D-BA53-5A2FF98C5018}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "object-orientation", "object-orientation\object-orientation.csproj", "{BAF92186-2741-49DE-8E22-957567A067DB}"
 EndProject

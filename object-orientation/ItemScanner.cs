@@ -1,11 +1,14 @@
 ﻿using System;
 
-namespace object_orientation
+namespace Object.Orientation
 {
     internal class ItemScanner
     {
         internal static Item ScanItem()
         {
+            Console.WriteLine("Welcome to NMart store");
+            Console.WriteLine("***************************");
+
             var item = new Item();
 
             Console.Write("Enter name of the item: ");

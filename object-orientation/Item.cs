@@ -1,4 +1,4 @@
-﻿namespace object_orientation
+﻿namespace Object.Orientation
 {
     internal class Item
     {

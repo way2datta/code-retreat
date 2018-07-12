@@ -1,21 +1,12 @@
 ﻿using System;
 
-namespace object_orientation
+namespace Object.Orientation
 {
     internal class Printer
     {
-        internal static void Print(BillingDetails billingDetails)
+        internal static void Print(string content)
         {
-            var output = "*******************************************\n" +
-                "Billing Details for '" + billingDetails.Item.Name + "':\n" +
-                "*******************************************\n" +
-                "Quantity: " + billingDetails.Item.Quantity +
-                "\nPrice per unit: " + billingDetails.Item.InitialPrice +
-                "\nFinal rate: " + billingDetails.ItemsFinalPrice;
-
-            Console.WriteLine(output);
-
-            Console.WriteLine("\n*********************************\n");
+            Console.WriteLine(content);
         }
     }
 }
