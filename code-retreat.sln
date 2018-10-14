@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4th round", "4th round", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "object-orientation", "object-orientation\object-orientation.csproj", "{BAF92186-2741-49DE-8E22-957567A067DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCodePractices", "CleanCodePractices\CleanCodePractices.csproj", "{0D0718F7-66E5-413F-9152-F67F93B461BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanCode.Libraries", "CleanCode.Libraries\CleanCode.Libraries.csproj", "{49233291-7A3D-463F-93EF-2BEDD73D6360}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{BAF92186-2741-49DE-8E22-957567A067DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAF92186-2741-49DE-8E22-957567A067DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAF92186-2741-49DE-8E22-957567A067DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D0718F7-66E5-413F-9152-F67F93B461BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D0718F7-66E5-413F-9152-F67F93B461BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D0718F7-66E5-413F-9152-F67F93B461BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D0718F7-66E5-413F-9152-F67F93B461BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49233291-7A3D-463F-93EF-2BEDD73D6360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49233291-7A3D-463F-93EF-2BEDD73D6360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49233291-7A3D-463F-93EF-2BEDD73D6360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49233291-7A3D-463F-93EF-2BEDD73D6360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
